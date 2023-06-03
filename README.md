@@ -116,20 +116,20 @@ The application provides the following REST API endpoints:
   "persons": [
   {
     "id": 1,
-    "name": "Petras",
-    "email": "petras@mail.com"
+    "name": "John Snow",
+    "email": "john@mail.com"
   }]
   }
 ```
 
 2. Delete meeting:
--  Description: Only the responsible person can delete the meeting.
--  Endpoint: `DELETE /meeting/{meetingId}/responsiblePerson/{personId}`
--  Response: Status:200 OK
+- Description: Only the responsible person can delete the meeting.
+- Endpoint: `DELETE /meeting/{meetingId}/responsiblePerson/{personId}`
+- Response: Status:200 OK
 
 3. Add a person to the meeting:
--  Endpoint: `POST /meeting/{meetingId}/addPerson`
--  Request Body:
+- Endpoint: `POST /meeting/{meetingId}/addPerson`
+- Request Body:
 
 ```
   {
@@ -139,8 +139,8 @@ The application provides the following REST API endpoints:
   }
 ```
 
--  Response: Status:200 OK
--  Body:
+- Response: Status:200 OK
+- Body:
 
 ```
    {
@@ -152,14 +152,14 @@ The application provides the following REST API endpoints:
 ```
 
 4. Remove Person from meeting:
--  The responsible person cannot be removed from the meeting.
--  `DELETE /meeting/{meetingId}/personToDelete/{personId}`
--  Response: Status:200 OK
+- The responsible person cannot be removed from the meeting.
+- `DELETE /meeting/{meetingId}/personToDelete/{personId}`
+- Response: Status:200 OK
 
 
 5. List all meetings with filtering options:
--  Endpoint: `GET /meeting/filteredMeetings`
--  Query Parameters:\
+- Endpoint: `GET /meeting/filteredMeetings`
+- Query Parameters:\
   -`description`: Filter by meeting description: `GET /meeting/filteredMeetings?description=Visma John Snow Meeting`\
   -`responsiblePerson`: Filter by responsible person:  `GET /meeting/filteredMeetings?responsiblePerson=John Snow`\
   -`category`: Filter by category: `GET /meeting/filteredMeetings?category=Hub`\
