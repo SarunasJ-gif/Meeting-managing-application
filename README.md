@@ -10,9 +10,9 @@
 - [Prerequisites](#Prerequisites)
 - [Configuration](#Configuration)
 - [Dependencies](#Dependencies)
-- [Project Structure](#Project Structure)
-- [Getting Started](#Getting Started)
-- [API Endpoints](#API Endpoints)
+- [Project Structure](#Project-Structure)
+- [Getting Started](#Getting-Started)
+- [API Endpoints](#API-Endpoints)
 
 ---
 
@@ -97,7 +97,7 @@ The application provides the following REST API endpoints:
   }
 ```
   
-- Response: Status:201 CREATED
+- Response: Status: 201 CREATED
 - Body:
 
 ```
@@ -126,7 +126,7 @@ The application provides the following REST API endpoints:
 2. Delete meeting:
 - Description: Only the responsible person can delete the meeting.
 - Endpoint: `DELETE /meeting/{meetingId}/responsiblePerson/{personId}`
-- Response: Status:200 OK
+- Response: Status: 200 OK
 
 3. Add a person to the meeting:
 - Endpoint: `POST /meeting/{meetingId}/addPerson`
@@ -140,7 +140,7 @@ The application provides the following REST API endpoints:
   }
 ```
 
-- Response: Status:200 OK
+- Response: Status: 200 OK
 - Body:
 
 ```
@@ -155,7 +155,7 @@ The application provides the following REST API endpoints:
 4. Remove Person from meeting:
 - The responsible person cannot be removed from the meeting.
 - `DELETE /meeting/{meetingId}/personToDelete/{personId}`
-- Response: Status:200 OK
+- Response: Status: 200 OK
 
 
 5. List all meetings with filtering options:
