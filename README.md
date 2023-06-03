@@ -165,6 +165,8 @@ The application provides the following REST API endpoints:
   -`responsiblePerson`: Filter by responsible person:  `GET /meeting/filteredMeetings?responsiblePerson=John Snow`\
   -`category`: Filter by category: `GET /meeting/filteredMeetings?category=Hub`\
   -`type`: Filter by type: `GET /meeting/filteredMeetings?type=Live`\
-  -`startDate` or `endDate`: Filter by dates: `GET /meeting/filteredMeetings?startDate=2023-06-02&endDate=2023-06-06`
+  -`startDate` or `endDate`: Filter by dates: `GET /meeting/filteredMeetings?startDate=2023-06-02&endDate=2023-06-06`\
+  -`numberOfAttendees`: Filter by number of attendees (e.g. show meetings that have over 10 people attending):
+  `GET /meeting/filteredMeetings?numberOfAttendees=10`
 
 ---
