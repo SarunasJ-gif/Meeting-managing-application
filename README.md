@@ -78,6 +78,7 @@ The application provides the following REST API endpoints:
 
 1. Create a new meeting:
 - Endpoint: `POST /meeting`
+- Description: when creating a meeting, the responsible person is automatically added to the list of participants  
 - Request Body:
 ```
   {
